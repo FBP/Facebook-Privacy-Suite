@@ -12,10 +12,14 @@ from Crypto.Cipher import Blowfish
 from multiprocessing import Process
 import binascii
 
+import logging
+logging.basicConfig(filename='example.log',level=logging.DEBUG)
+
 class EncryptEcho(protocol.Protocol):
     def dataReceived(self,data):
             encdec = encrypt_decrypt('This is a key gsdgsgdfggd')
             print 'Recieved: ',data
+            logging.info(data)
             sent_data = encdec.text_encrypt(data)
             print 'Returned: ', sent_data 
             self.transport.write(sent_data)
