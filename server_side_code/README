@@ -1,0 +1,9 @@
+This is a simple server in python twisted that takes a message and encrypts it. It currently runs on TCP port 1234. 
+
+To run: 
+python server.py 
+
+In another terminal: 
+python send_test_packet.py
+
+You need Twisted and PyCrypto for this to work.
