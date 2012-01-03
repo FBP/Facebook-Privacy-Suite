@@ -1,8 +1,10 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
+
 """
 Created on Mon Jan  2 15:52:38 2012
 
 @author: Chris Paulson
+
 """
 
 ## This is a simple server for encryption protocol testing, it's built on twisted. Currently, it'll echo any tcp data recieved on port 1234
