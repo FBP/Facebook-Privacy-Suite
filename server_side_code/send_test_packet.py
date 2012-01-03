@@ -13,7 +13,7 @@ port_decrypt = 1235
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((host,port_encrypt))
-s.send('Vera is SUPER hot!!!')
+s.send('Test Message Here')
 
 recieved = s.recv(1024)
 print 'Encrypted: ', recieved
