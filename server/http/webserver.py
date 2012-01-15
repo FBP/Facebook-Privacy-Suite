@@ -1,4 +1,5 @@
 #Copyright Jon Berg , turtlemeat.com
+#modifications by cpaulson
 
 import string,cgi,time
 from os import curdir, sep
